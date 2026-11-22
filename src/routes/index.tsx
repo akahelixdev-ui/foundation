@@ -143,48 +143,66 @@ function Index() {
         </div>
       </section>
 
-      {/* 4. PRINCIPAL SUPPORTER BANNER (AKAHELIX) */}
-      <section className="border-y border-border/80 bg-muted/30 py-16">
+      {/* 4. PRINCIPAL SPONSOR — INSTITUTIONAL & REFINED */}
+      <section className="bg-ink text-ink-foreground py-20 border-y border-white/10">
         <div className="mx-auto max-w-6xl px-5">
-          <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-border bg-card p-8 shadow-xs md:flex-row md:items-center md:p-10">
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
-                <Sparkles className="h-4 w-4" />
-                <span>Founding Support & Principal Sponsor</span>
+          <div className="grid items-center gap-10 md:grid-cols-12">
+            <div className="md:col-span-8">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-7 w-7 items-center justify-center rounded-[5px] bg-blue-600 text-white shadow-xs">
+                  <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+                    <path d="M4 3 C 4 9, 16 11, 16 17" />
+                    <path d="M16 3 C 16 9, 4 11, 4 17" />
+                    <line x1="5.5" y1="5" x2="14.5" y2="5" />
+                    <line x1="8" y1="8" x2="12" y2="8" />
+                    <line x1="8" y1="12" x2="12" y2="12" />
+                    <line x1="5.5" y1="15" x2="14.5" y2="15" />
+                  </svg>
+                </span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                  Principal Funder & Founding Partner
+                </span>
               </div>
-              <h3 className="mt-2 text-2xl font-bold text-foreground md:text-3xl">
-                Mainly funded & backed by <span className="text-primary font-display">AKAHELIX</span>
+
+              <h3 className="mt-4 font-display text-3xl font-medium tracking-tight text-white md:text-4xl">
+                Sustained by AKAHELIX INC.
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                The foundation's operational and kit distribution costs are primarily underwritten by{" "}
+
+              <p className="mt-4 max-w-xl text-base text-ink-foreground/75 leading-relaxed">
+                Our educational outreach and rural kit distributions in Bangladesh are underwritten through the core sponsorship of AKAHELIX. This institutional backing ensures every dollar given by the community goes 100% directly to books, study kits, and examination fees.
+              </p>
+
+              <div className="mt-6 flex flex-wrap items-center gap-6 text-sm">
                 <a
                   href="https://akahelix.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-foreground underline hover:text-primary"
+                  className="inline-flex items-center gap-2 font-semibold text-blue-400 transition-colors hover:text-blue-300"
                 >
-                  AKAHELIX Inc.
+                  <span>Visit akahelix.com</span>
+                  <ExternalLink className="h-4 w-4" />
                 </a>
-                , ensuring our rural education initiatives remain sustained and uninterrupted across Bangladesh.
-              </p>
+                <Link
+                  to="/partners"
+                  className="font-medium text-ink-foreground/80 underline-offset-4 hover:text-white hover:underline"
+                >
+                  Learn about the partnership →
+                </Link>
+              </div>
             </div>
-            <div className="flex shrink-0 flex-wrap items-center gap-3">
-              <a
-                href="https://akahelix.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold hover:border-foreground"
-              >
-                <span>akahelix.com</span>
-                <ExternalLink className="h-4 w-4 text-muted-foreground" />
-              </a>
-              <Link
-                to="/partners"
-                className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
-              >
-                <span>View Partners</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+
+            <div className="md:col-span-4">
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-xs">
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                  Zero Overhead Promise
+                </p>
+                <p className="mt-2 text-2xl font-display font-semibold text-white">
+                  100% Direct Delivery
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-ink-foreground/70">
+                  Because AKAHELIX underwrites the foundation's administrative and operational requirements, all public donations are spent exclusively on children's study supplies and fees.
+                </p>
+              </div>
             </div>
           </div>
         </div>
